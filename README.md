@@ -1,42 +1,27 @@
 ## Second C# exercises Entra21
 
-Each resolution of this list is in this repository. The identification is a commentary above the Class' name:
+Each resolution of this list is in this repository. The identification is the method's name:
 
-    // Exercise 1)a <--- Id
+    // static void Exercise1() <--- Id
 
-If you'd like to run those codes, you need to replace de class' name to Main and after that, run the code:
+If you'd like to run those codes, you need to instanciate the method into Main method and after that, run the code:
 
 ``` c#
-static void CArrayDiffAandB(string[] args)
+ static void Exercise1()
         {
-            int [] a= {1, 2, 50, 4, 677, 11, 34, 56, 78, 22, 1, 90, 1083, 755, 32};
-            int [] b = {133, 44, 7, 23, 54, 2, 78, 44, 13, 1, 45, 67, 21, 455, 45};
-            int [] c = new int [15];
+            const int arraysLength = 15;
+            double [] arrayA = new double[arraysLength];
+            double [] arrayB = new double[arraysLength];
+            double [] arrayC = new double[arraysLength];
 
-            var count = 0;
+            for (int i = 0; i < arraysLength; i++)
+            ...
 
-            while (count < 15){
-                c[count] = a[count] - b[count];
-                count++;
-            }
-    
-        }
-
-//Replace the name (IncreasingNumbers) to (Main):
+//Intanciate (Exercise1a) into (Main):
 
 static void Main(string[] args)
         {
-            int [] a= {1, 2, 50, 4, 677, 11, 34, 56, 78, 22, 1, 90, 1083, 755, 32};
-            int [] b = {133, 44, 7, 23, 54, 2, 78, 44, 13, 1, 45, 67, 21, 455, 45};
-            int [] c = new int [15];
-
-            var count = 0;
-
-            while (count < 15){
-                c[count] = a[count] - b[count];
-                count++;
-            }
-    
+            Exercise1();    
         }
 
 //Then, run the code!
