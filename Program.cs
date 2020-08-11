@@ -14,28 +14,35 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < arraysLength; i++)
             {
                 Console.WriteLine($"Insert the {i + 1} number in Array A");
-                var input = Console.ReadLine();
-                try
+                while (true)
                 {
-                    arrayA[i] = Double.Parse(input);
+                    try
+                    {
+                        arrayA[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
-                }
+                
             }
 
             for (int i = 0; i < arraysLength; i++)
             {
-                Console.WriteLine($"Insert the {i + 1} number in Array A");
-                var input = Console.ReadLine();
-                try
+                Console.WriteLine($"Insert the {i + 1} number in Array B");
+                while (true)
                 {
-                    arrayB[i] = Double.Parse(input);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        arrayB[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
                 arrayC[i] = arrayA[i] - arrayB[i];
             }
@@ -48,14 +55,17 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine($"Insert the {i + 1} number");
-                var input = Console.ReadLine();
-                try
+                while (true)
                 {
-                    numbers[i] = Double.Parse(input);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        numbers[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
             }
 
@@ -76,27 +86,33 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine($"Insert the {i + 1}º number");
-                var inpu= Console.ReadLine();
-                try
+                while (true)
                 {
-                    numbers[i] = Double.Parse(inpu);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        numbers[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
             }
 
             Console.WriteLine("Give a guess: ");
-            var input = Console.ReadLine();
-            try
+            while (true)
             {
-                guess= Double.Parse(input);
-            }
+                try
+                {
+                    guess = Double.Parse(Console.ReadLine());
+                    break;
+                }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
-                }
+                    Console.WriteLine("Insert only numbers!! Try Again!");
+                }    
+            }
             var thereIsANumber = false;
 
             foreach (var item in numbers)
@@ -119,28 +135,34 @@ namespace second_exersises_csharo_entra21
             for(int i = 0; i < arraysLength; i++)
             {
                 Console.WriteLine($"Digit the {i+1}º number");
-                var input = Console.ReadLine();
-                try
+                while (true)
                 {
-                    arrayA[i] = Double.Parse(input);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        arrayA[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
             }
 
             for(int i = 0; i <arraysLength; i++)
             {
                 Console.WriteLine($"Digit the {i+1}º number");
-                var input = Console.ReadLine();
-                try
+                while (true)
                 {
-                    arrayB[i] = Double.Parse(input);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        arrayB[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
 
                 for (int j = 0; j < arrayA.Length; j++)
@@ -172,14 +194,17 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine($"Digit the {i + 1}º number: ");
-                var input = Console.ReadLine();
-                try
+                while (true)
                 {
-                    numbers[i] = Double.Parse(input);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        numbers[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
                 avarage+=numbers[i];
             }
@@ -215,14 +240,17 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < arrayLength; i++)
             {
                 Console.WriteLine($"Digit the {i + 1}º number in the A array: ");
-                var number = Console.ReadLine();
-                try
+                while (true)
                 {
-                    arrayA[i] = Double.Parse(number);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        arrayA[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
                               
             }
@@ -244,14 +272,17 @@ namespace second_exersises_csharo_entra21
             for (int i = 0; i < arrayLength; i++)
             {
                 Console.WriteLine($"Digit the {i + 1}º number in the B array: ");
-                var number = Console.ReadLine();
-                try
+                while (true)
                 {
-                    arrayB[i] = Double.Parse(number);
-                }
-                catch (System.Exception)
-                {
-                    Console.WriteLine("Insert only numbers!!");
+                    try
+                    {
+                        arrayB[i] = Double.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch (System.Exception)
+                    {
+                        Console.WriteLine("Insert only numbers!! Try Again!");
+                    }    
                 }
                 
             }
