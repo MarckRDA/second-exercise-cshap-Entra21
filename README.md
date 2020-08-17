@@ -1,31 +1,9 @@
 ## Second C# exercises Entra21
 
-Each resolution of this list is in this repository. The identification is the method's name:
 
-    // static void Exercise1() <--- Id
+If you'd like to run those codes, you just need to choose the exercise between 1 and 9 in the Menu.cs file:
 
-If you'd like to run those codes, you need to instanciate the method into Main method and after that, run the code:
 
-``` c#
- static void Exercise1()
-        {
-            const int arraysLength = 15;
-            double [] arrayA = new double[arraysLength];
-            double [] arrayB = new double[arraysLength];
-            double [] arrayC = new double[arraysLength];
-
-            for (int i = 0; i < arraysLength; i++)
-            ...
-
-//Intanciate (Exercise1a) into (Main):
-
-static void Main(string[] args)
-        {
-            Exercise1();    
-        }
-
-//Then, run the code!
-```
 1. Leia dois arrays A e B com 15 elementos. Construir um array C, onde cada elemento de C é a subtração do elemento correspondente de A com B.
 
 2. Ler um array com 10 inteiros e mostrar os números na ordem direta e inversa a que foram lidos.
